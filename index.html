@@ -1,0 +1,926 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaterServ - Premium Catering Services</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="Container">
+
+    <!-- NAVBAR -->
+    <nav class="cs1" id="navbar">
+        <a href="#" class="nav-logo">
+            <h2 id="title"><span class="cat">Cater</span>Serv</h2>
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="desktop-nav">
+            <li><a href="#" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#Serv" class="nav-link">Services</a></li>
+            <li><a href="#Events" class="nav-link">Events</a></li>
+            <li><a href="#Menu" class="nav-link">Menu</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#ourblog">Our Blog</a></li>
+                    <li><a href="#ourteam">Our Team</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                </ul>
+            </li>
+            <li><a href="#Contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="btn-search" aria-label="Search"><i class="fas fa-search"></i></button>
+            <a href="#booking" class="btn-booknow">Book Now</a>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Mobile Nav -->
+        <ul class="mobile-nav" id="mobileNav">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#Serv" class="nav-link">Services</a></li>
+            <li><a href="#Events" class="nav-link">Events</a></li>
+            <li><a href="#Menu" class="nav-link">Menu</a></li>
+            <li><a href="#booking" class="nav-link">Booking</a></li>
+            <li><a href="#ourblog" class="nav-link">Our Blog</a></li>
+            <li><a href="#ourteam" class="nav-link">Our Team</a></li>
+            <li><a href="#testimonial" class="nav-link">Testimonial</a></li>
+            <li><a href="#Contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="cs2">
+        <div class="fsp1">
+            <div data-aos="fade-down" data-aos-duration="1200">
+                <p class="welcome-tag">Welcome to CaterServ</p>
+                <h1 class="hero-title">Book <span class="cat">Cater</span>Serv For <br>Your Dream Event</h1>
+            </div>
+            <div class="hero-btns" data-aos="fade-right" data-aos-duration="1400">
+                <a href="#booking" class="btn-primary">Book Now</a>
+                <a href="#about" class="btn-secondary">Know More</a>
+            </div>
+        </div>
+        <div class="fsp2" data-aos="zoom-in-down" data-aos-duration="1500">
+            <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/hero.png" alt="Hero Chef" class="hero-img">
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="cs3" id="about">
+        <div class="ssp1" data-aos="fade-right" data-aos-duration="1000">
+            <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/about.jpg" alt="About Us" class="about-img">
+        </div>
+        <div class="ssp2" data-aos="fade-left" data-aos-duration="1000">
+            <p class="section-tag">ABOUT US</p>
+            <h1 class="section-heading">Trusted By 200+ Satisfied Clients</h1>
+            <p class="section-para">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+            <div class="about-features">
+                <div class="feature-col">
+                    <p><i class="fas fa-share feature-icon"></i> Fresh and Fast Food Delivery</p>
+                    <p><i class="fas fa-share feature-icon"></i> Easy Customization Options</p>
+                </div>
+                <div class="feature-col">
+                    <p><i class="fas fa-share feature-icon"></i> 24/7 Customer Support</p>
+                    <p><i class="fas fa-share feature-icon"></i> Delicious Deals for Delicious Meals</p>
+                </div>
+            </div>
+            <a href="#" class="btn-primary about-btn">About Us <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- STATS SECTION -->
+    <div class="cs4" data-aos="fade-up" data-aos-duration="1500">
+        <div class="stat-card">
+            <i class="fas fa-users fa-4x stat-icon"></i>
+            <h2 class="stat-number" data-target="1595">0</h2>
+            <p class="stat-label">Happy Customers</p>
+        </div>
+        <div class="stat-card">
+            <i class="fas fa-users-cog fa-4x stat-icon"></i>
+            <h2 class="stat-number" data-target="684">0</h2>
+            <p class="stat-label">Expert Chefs</p>
+        </div>
+        <div class="stat-card">
+            <i class="fas fa-check fa-4x stat-icon"></i>
+            <h2 class="stat-number" data-target="982">0</h2>
+            <p class="stat-label">Events Complete</p>
+        </div>
+    </div>
+
+    <!-- SERVICES SECTION -->
+    <div class="cs5" id="Serv" data-aos="fade-up" data-aos-duration="1500">
+        <div class="section-header">
+            <p class="section-tag centered">Our Services</p>
+            <h1 class="section-title-lg">What We Offer</h1>
+        </div>
+        <div class="cards">
+            <div class="service-card">
+                <i class="fas fa-cheese fa-4x service-icon"></i>
+                <h4 class="service-name">Wedding Services</h4>
+                <p class="service-desc">Contrary to popular belief, ipsum is not simply random.</p>
+                <button class="btn-readmore">Read More</button>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-pizza-slice fa-4x service-icon"></i>
+                <h4 class="service-name">Corporate Catering</h4>
+                <p class="service-desc">Contrary to popular belief, ipsum is not simply random.</p>
+                <button class="btn-readmore">Read More</button>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hotdog fa-4x service-icon"></i>
+                <h4 class="service-name">Cocktail Reception</h4>
+                <p class="service-desc">Contrary to popular belief, ipsum is not simply random.</p>
+                <button class="btn-readmore">Read More</button>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hamburger fa-4x service-icon"></i>
+                <h4 class="service-name">Bento Catering</h4>
+                <p class="service-desc">Contrary to popular belief, ipsum is not simply random.</p>
+                <button class="btn-readmore">Read More</button>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-wine-glass-alt fa-4x service-icon"></i>
+                <h4 class="service-name">Pub Party</h4>
+                <p class="service-desc">Contrary to popular belief, ipsum is not simply random.</p>
+                <button class="btn-readmore">Read More</button>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-walking fa-4x service-icon"></i>
+                <h4 class="service-name">Home Delivery</h4>
+                <p class="service-desc">Contrary to popular belief, ipsum is not simply random.</p>
+                <button class="btn-readmore">Read More</button>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-wheelchair fa-4x service-icon"></i>
+                <h4 class="service-name">Sit-down Catering</h4>
+                <p class="service-desc">Contrary to popular belief, ipsum is not simply random.</p>
+                <button class="btn-readmore">Read More</button>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-utensils fa-4x service-icon"></i>
+                <h4 class="service-name">Buffet Catering</h4>
+                <p class="service-desc">Contrary to popular belief, ipsum is not simply random.</p>
+                <button class="btn-readmore">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- EVENTS SECTION -->
+    <div class="cs6" id="Events" data-aos="fade-up" data-aos-duration="1500">
+        <div class="section-header">
+            <p class="section-tag centered">Latest Events</p>
+            <h2 class="section-title-lg">Our Social &amp; Professional Events Gallery</h2>
+        </div>
+        <div class="cs6a">
+            <a href="#" class="filter-btn active">All Events</a>
+            <a href="#" class="filter-btn">Wedding</a>
+            <a href="#" class="filter-btn">Corporate</a>
+            <a href="#" class="filter-btn">Cocktail</a>
+            <a href="#" class="filter-btn">Buffet</a>
+        </div>
+        <div class="cs6b">
+            <div class="event-item">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/event-1.jpg" alt="Event 1" class="img1">
+                <div class="event-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="event-item">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/event-2.jpg" alt="Event 2" class="img1">
+                <div class="event-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="event-item">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/event-3.jpg" alt="Event 3" class="img1">
+                <div class="event-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="event-item">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/event-4.jpg" alt="Event 4" class="img1">
+                <div class="event-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="event-item">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/event-5.jpg" alt="Event 5" class="img1">
+                <div class="event-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="event-item">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/event-6.jpg" alt="Event 6" class="img1">
+                <div class="event-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="event-item">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/event-7.jpg" alt="Event 7" class="img1">
+                <div class="event-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="event-item">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/event-8.jpg" alt="Event 8" class="img1">
+                <div class="event-overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU SECTION -->
+    <div class="cs7" id="Menu" data-aos="fade-up" data-aos-duration="2000">
+        <div class="section-header">
+            <p class="section-tag centered">Our Menu</p>
+            <h2 class="section-title-lg">Most Popular Food in the World</h2>
+        </div>
+        <div class="cs6a">
+            <a href="#" class="filter-btn active">Starter</a>
+            <a href="#" class="filter-btn">Main Course</a>
+            <a href="#" class="filter-btn">Drinks</a>
+            <a href="#" class="filter-btn">Offers</a>
+            <a href="#" class="filter-btn">Our Special</a>
+        </div>
+        <div class="cs7a">
+            <div class="menu-container">
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-01.jpg" alt="Sabudana Tikki" class="menu-img">
+                        <div class="menu-content">
+                            <div class="menu-header">
+                                <h3 class="menu-name">Sabudana Tikki</h3>
+                                <span class="menu-price">$90</span>
+                            </div>
+                            <p class="menu-desc">Consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-03.jpg" alt="Pizza" class="menu-img">
+                        <div class="menu-content">
+                            <div class="menu-header">
+                                <h3 class="menu-name">Pizza</h3>
+                                <span class="menu-price">$90</span>
+                            </div>
+                            <p class="menu-desc">Consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-05.jpg" alt="Chicken" class="menu-img">
+                        <div class="menu-content">
+                            <div class="menu-header">
+                                <h3 class="menu-name">Chicken</h3>
+                                <span class="menu-price">$90</span>
+                            </div>
+                            <p class="menu-desc">Consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-07.jpg" alt="Sweet" class="menu-img">
+                        <div class="menu-content">
+                            <div class="menu-header">
+                                <h3 class="menu-name">Sweet</h3>
+                                <span class="menu-price">$90</span>
+                            </div>
+                            <p class="menu-desc">Consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-02.jpg" alt="Crispy" class="menu-img">
+                        <div class="menu-content">
+                            <div class="menu-header">
+                                <h3 class="menu-name">Crispy</h3>
+                                <span class="menu-price">$90</span>
+                            </div>
+                            <p class="menu-desc">Consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-04.jpg" alt="Bacon" class="menu-img">
+                        <div class="menu-content">
+                            <div class="menu-header">
+                                <h3 class="menu-name">Bacon</h3>
+                                <span class="menu-price">$90</span>
+                            </div>
+                            <p class="menu-desc">Consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-06.jpg" alt="Blooming" class="menu-img">
+                        <div class="menu-content">
+                            <div class="menu-header">
+                                <h3 class="menu-name">Blooming</h3>
+                                <span class="menu-price">$90</span>
+                            </div>
+                            <p class="menu-desc">Consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-08.jpg" alt="Argentinian" class="menu-img">
+                        <div class="menu-content">
+                            <div class="menu-header">
+                                <h3 class="menu-name">Argentinian</h3>
+                                <span class="menu-price">$90</span>
+                            </div>
+                            <p class="menu-desc">Consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOOKING SECTION -->
+        <div class="cs8" id="booking">
+            <div class="booking-wrapper">
+                <div class="booking-page">
+                    <div class="booking-side-panel left">
+                        <svg viewBox="0 0 160 500" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="160" height="500" fill="#e8e2d4"/>
+                            <circle cx="60" cy="80" r="42" fill="#e03030" opacity="0.9"/>
+                            <ellipse cx="60" cy="42" rx="6" ry="10" fill="#2d6a1f" transform="rotate(-15 60 42)"/>
+                            <ellipse cx="70" cy="40" rx="5" ry="9" fill="#2d6a1f" transform="rotate(10 70 40)"/>
+                            <circle cx="110" cy="160" r="36" fill="#e03030" opacity="0.85"/>
+                            <line x1="110" y1="126" x2="110" y2="196" stroke="#c02020" stroke-width="1.5" opacity="0.5"/>
+                            <line x1="76" y1="160" x2="146" y2="160" stroke="#c02020" stroke-width="1.5" opacity="0.5"/>
+                            <path d="M30 230 Q55 210 70 240 Q85 270 60 290 Q40 300 25 275 Q10 250 30 230Z" fill="#d42020" opacity="0.9"/>
+                            <ellipse cx="90" cy="340" rx="22" ry="28" fill="#f5f0e0" stroke="#d4c890" stroke-width="1.5"/>
+                            <ellipse cx="50" cy="420" rx="34" ry="20" fill="none" stroke="#e8c080" stroke-width="8" opacity="0.7"/>
+                            <ellipse cx="120" cy="460" rx="15" ry="25" fill="#3a8a2a" opacity="0.85" transform="rotate(20 120 460)"/>
+                        </svg>
+                    </div>
+                    <div class="booking-side-panel right">
+                        <svg viewBox="0 0 160 500" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="160" height="500" fill="#e8e2d4"/>
+                            <circle cx="100" cy="80" r="42" fill="#e03030" opacity="0.9"/>
+                            <ellipse cx="100" cy="42" rx="6" ry="10" fill="#2d6a1f" transform="rotate(15 100 42)"/>
+                            <ellipse cx="90" cy="40" rx="5" ry="9" fill="#2d6a1f" transform="rotate(-10 90 40)"/>
+                            <circle cx="50" cy="160" r="36" fill="#e03030" opacity="0.85"/>
+                            <line x1="50" y1="126" x2="50" y2="196" stroke="#c02020" stroke-width="1.5" opacity="0.5"/>
+                            <line x1="16" y1="160" x2="86" y2="160" stroke="#c02020" stroke-width="1.5" opacity="0.5"/>
+                            <path d="M130 230 Q105 210 90 240 Q75 270 100 290 Q120 300 135 275 Q150 250 130 230Z" fill="#d42020" opacity="0.9"/>
+                            <ellipse cx="70" cy="340" rx="22" ry="28" fill="#f5f0e0" stroke="#d4c890" stroke-width="1.5"/>
+                            <ellipse cx="110" cy="420" rx="34" ry="20" fill="none" stroke="#e8c080" stroke-width="8" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <div class="booking-card">
+                        <span class="booking-pill">Book Us</span>
+                        <div class="booking-header">
+                            <h2 class="booking-title">Where You Want Our Services</h2>
+                        </div>
+                        <form id="booking-form" class="booking-form" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="8b4e9fa9-2046-4129-b89e-5ba640c24b3a">
+                            <input type="hidden" name="subject" value="New Booking Request - CaterServ">
+                            <input type="hidden" name="redirect" value="false">
+
+                            <div class="booking-field"><input type="text" name="name" placeholder="Your Name" required></div>
+                            <div class="booking-field"><input type="email" name="email" placeholder="Enter Your Email" required></div>
+                            <div class="booking-field"><input type="tel" name="phone" placeholder="Your Contact No." required></div>
+                            <div class="booking-field booking-select">
+                                <select name="country" required>
+                                    <option value="" disabled selected>Select Country</option>
+                                    <option value="usa">USA</option>
+                                    <option value="uk">UK</option>
+                                    <option value="india">India</option>
+                                </select>
+                            </div>
+                            <div class="booking-field booking-select">
+                                <select name="city" required>
+                                    <option value="" disabled selected>Select City</option>
+                                    <option value="newyork">New York</option>
+                                    <option value="london">London</option>
+                                    <option value="mumbai">Mumbai</option>
+                                </select>
+                            </div>
+                            <div class="booking-field booking-select">
+                                <select name="place" required>
+                                    <option value="" disabled selected>Select Place</option>
+                                    <option value="hall">Event Hall</option>
+                                    <option value="hotel">Hotel</option>
+                                    <option value="outdoor">Outdoor Venue</option>
+                                </select>
+                            </div>
+                            <div class="booking-field booking-select">
+                                <select name="event" required>
+                                    <option value="" disabled selected>Select Events</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate</option>
+                                    <option value="birthday">Birthday</option>
+                                </select>
+                            </div>
+                            <div class="booking-field booking-select">
+                                <select name="guests" required>
+                                    <option value="" disabled selected>No. Of Guests</option>
+                                    <option value="100-200">100-200</option>
+                                    <option value="300-400">300-400</option>
+                                    <option value="500-600">500-600</option>
+                                    <option value="700-800">700-800</option>
+                                    <option value="900-1000">900-1000</option>
+                                    <option value="1000+">1000+</option>
+                                </select>
+                            </div>
+                            <div class="booking-field booking-select">
+                                <select name="preference" required>
+                                    <option value="" disabled selected>Food Preference</option>
+                                    <option value="vegetarian">Vegetarian</option>
+                                    <option value="non-vegetarian">Non Vegetarian</option>
+                                </select>
+                            </div>
+                            <div class="booking-field"><input type="date" name="date" required></div>
+                            <div class="booking-submit"><button type="submit" class="booking-button">Submit Now</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TEAM SECTION -->
+    <div class="cs9" id="ourteam" data-aos="fade-up" data-aos-duration="1500">
+        <p class="section-tag centered">Our Team</p>
+        <h1 class="section-title-lg">We Have an Experienced Chef Team</h1>
+        <div class="team">
+            <div class="team-card">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/team-1.jpg" alt="Henry" class="chef-img">
+                <div class="chef-info">
+                    <h4 class="chef-name">Henry</h4>
+                    <p class="chef-role">Decoration Chef</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/team-2.jpg" alt="Jemes Born" class="chef-img">
+                <div class="chef-info">
+                    <h4 class="chef-name">Jemes Born</h4>
+                    <p class="chef-role">Executive Chef</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/team-3.jpg" alt="Martin Hill" class="chef-img">
+                <div class="chef-info">
+                    <h4 class="chef-name">Martin Hill</h4>
+                    <p class="chef-role">Kitchen Porter</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/team-4.jpg" alt="Adam Smith" class="chef-img">
+                <div class="chef-info">
+                    <h4 class="chef-name">Adam Smith</h4>
+                    <p class="chef-role">Head Chef</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TESTIMONIAL SECTION -->
+    <div class="cs10" id="testimonial" data-aos="fade-up" data-aos-duration="1500">
+        <p class="section-tag centered">Testimonial</p>
+        <h1 class="section-title-lg">What Our Customers Say!</h1>
+        <div class="testimonial-track-wrapper">
+            <div class="testimonial-track track-rtl">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/testimonial-1.jpg" alt="Customer" class="testimonial-img">
+                        <div class="testimonial-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="profession">Event Planner</p>
+                        </div>
+                        <span class="quote-icon"><i class="fa fa-quote-right fa-2x"></i></span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/testimonial-4.jpg" alt="Customer" class="testimonial-img">
+                        <div class="testimonial-info">
+                            <h3>Michael Brown</h3>
+                            <p class="profession">Business Owner</p>
+                        </div>
+                        <span class="quote-icon"><i class="fa fa-quote-right fa-2x"></i></span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/testimonial-3.jpg" alt="Customer" class="testimonial-img">
+                        <div class="testimonial-info">
+                            <h3>Emily Davis</h3>
+                            <p class="profession">Wedding Coordinator</p>
+                        </div>
+                        <span class="quote-icon"><i class="fa fa-quote-right fa-2x"></i></span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/testimonial-2.jpg" alt="Customer" class="testimonial-img">
+                        <div class="testimonial-info">
+                            <h3>Robert Wilson</h3>
+                            <p class="profession">Corporate Manager</p>
+                        </div>
+                        <span class="quote-icon"><i class="fa fa-quote-right fa-2x"></i></span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/testimonial-1.jpg" alt="Customer" class="testimonial-img">
+                        <div class="testimonial-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="profession">Event Planner</p>
+                        </div>
+                        <span class="quote-icon"><i class="fa fa-quote-right fa-2x"></i></span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/testimonial-4.jpg" alt="Customer" class="testimonial-img">
+                        <div class="testimonial-info">
+                            <h3>Michael Brown</h3>
+                            <p class="profession">Business Owner</p>
+                        </div>
+                        <span class="quote-icon"><i class="fa fa-quote-right fa-2x"></i></span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-track-wrapper" style="margin-top:20px;">
+            <div class="testimonial-track track-ltr">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/testimonial-3.jpg" alt="Customer" class="testimonial-img">
+                        <div class="testimonial-info">
+                            <h3>Emily Davis</h3>
+                            <p class="profession">Wedding Coordinator</p>
+                        </div>
+                        <span class="quote-icon"><i class="fa fa-quote-right fa-2x"></i></span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/testimonial-2.jpg" alt="Customer" class="testimonial-img">
+                        <div class="testimonial-info">
+                            <h3>Robert Wilson</h3>
+                            <p class="profession">Corporate Manager</p>
+                        </div>
+                        <span class="quote-icon"><i class="fa fa-quote-right fa-2x"></i></span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/testimonial-1.jpg" alt="Customer" class="testimonial-img">
+                        <div class="testimonial-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="profession">Event Planner</p>
+                        </div>
+                        <span class="quote-icon"><i class="fa fa-quote-right fa-2x"></i></span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/testimonial-4.jpg" alt="Customer" class="testimonial-img">
+                        <div class="testimonial-info">
+                            <h3>Michael Brown</h3>
+                            <p class="profession">Business Owner</p>
+                        </div>
+                        <span class="quote-icon"><i class="fa fa-quote-right fa-2x"></i></span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/testimonial-3.jpg" alt="Customer" class="testimonial-img">
+                        <div class="testimonial-info">
+                            <h3>Emily Davis</h3>
+                            <p class="profession">Wedding Coordinator</p>
+                        </div>
+                        <span class="quote-icon"><i class="fa fa-quote-right fa-2x"></i></span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/testimonial-2.jpg" alt="Customer" class="testimonial-img">
+                        <div class="testimonial-info">
+                            <h3>Robert Wilson</h3>
+                            <p class="profession">Corporate Manager</p>
+                        </div>
+                        <span class="quote-icon"><i class="fa fa-quote-right fa-2x"></i></span>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOG SECTION -->
+    <div class="cs11" id="ourblog" data-aos="fade-up" data-aos-duration="1500">
+        <p class="section-tag centered">Our Blog</p>
+        <h1 class="section-title-lg">Be First Who Reads the News</h1>
+        <div class="blogs">
+            <div class="blog-card" data-aos="zoom-in">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/blog-1.jpg" alt="Blog 1" class="blog-img">
+                <div class="blog-content">
+                    <div class="blog-date">
+                        <span class="blog-day">16</span>
+                        <span class="blog-month">Sep</span>
+                    </div>
+                    <div class="blog-text">
+                        <a href="#" class="blog-link"><h4>How to Get More Taste in Your Food</h4></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/blog-2.jpg" alt="Blog 2" class="blog-img">
+                <div class="blog-content">
+                    <div class="blog-date">
+                        <span class="blog-day">20</span>
+                        <span class="blog-month">Oct</span>
+                    </div>
+                    <div class="blog-text">
+                        <a href="#" class="blog-link"><h4>Top 10 Catering Trends for 2025</h4></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/blog-3.jpg" alt="Blog 3" class="blog-img">
+                <div class="blog-content">
+                    <div class="blog-date">
+                        <span class="blog-day">05</span>
+                        <span class="blog-month">Nov</span>
+                    </div>
+                    <div class="blog-text">
+                        <a href="#" class="blog-link"><h4>Planning the Perfect Wedding Menu</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER INFO SECTION -->
+    <div class="cs12" id="Contact">
+        <div class="CaterServ-end">
+            <h2 id="title"><span class="cat">Cater</span>Serv</h2>
+            <p class="end1">There cursus massa at urna aculis estie.<br>Sed aliquam ellus vitae ultrs condmentum<br>leo massa mollis its est iegittis miristum.</p>
+            <br>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100025354583422" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/rajesh_athelli/" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/rajesh-athelli-78a542321/" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="Special">
+            <h4 class="end2">Special Facilities</h4><br>
+            <a href="#" class="footer-link"><i class="fa fa-check footer-check"></i>Cheese Burger</a><br><br>
+            <a href="#" class="footer-link"><i class="fa fa-check footer-check"></i>Sandwich</a><br><br>
+            <a href="#" class="footer-link"><i class="fa fa-check footer-check"></i>Paneer Burger</a><br><br>
+            <a href="#" class="footer-link"><i class="fa fa-check footer-check"></i>Special Sweets</a>
+        </div>
+        <div class="Contact-us">
+            <h4 class="end2">Contact Us</h4><br>
+            <p class="contact-item"><i class="fa fa-map-marker-alt footer-check"></i>Hyderabad, India</p><br>
+            <p class="contact-item"><i class="fa fa-phone-alt footer-check"></i>(+91) 96522 60707</p><br>
+            <p class="contact-item"><i class="fas fa-envelope footer-check"></i>rajeshattelli765@gmail.com</p><br>
+            <p class="contact-item"><i class="fa fa-clock footer-check"></i>24/7 Hours Service</p>
+        </div>
+        <div class="Social">
+            <h4 class="end2">Social Gallery</h4><br>
+            <div class="Gallery">
+                <div class="g1"><img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-01.jpg" alt="Gallery 1" class="gallery-img"></div>
+                <div class="g1"><img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-02.jpg" alt="Gallery 2" class="gallery-img"></div>
+                <div class="g1"><img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-03.jpg" alt="Gallery 3" class="gallery-img"></div>
+                <div class="g1"><img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-04.jpg" alt="Gallery 4" class="gallery-img"></div>
+                <div class="g1"><img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-05.jpg" alt="Gallery 5" class="gallery-img"></div>
+                <div class="g1"><img src="https://demo.htmlcodex.com/2786/catering-services-website-template/img/menu-06.jpg" alt="Gallery 6" class="gallery-img"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="cs13">
+        <div class="footer">
+            <span class="copy"><i class="fas fa-copyright"></i> <a href="#" class="footer-site-link">CaterServ</a>, All Rights Reserved.</span>
+        </div>
+        <div class="by">
+            Designed By <a href="https://rajeshathelli2005.github.io/FUTURE_FS_01/#about" class="designer-link">RAJESH ATHELLI</a>
+        </div>
+    </div>
+
+</div><!-- end .Container -->
+
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ once: true, offset: 80 });
+</script>
+
+<script>
+// ---- Navbar sticky shadow ----
+window.addEventListener('scroll', function () {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// ---- Hamburger menu ----
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+hamburger.addEventListener('click', function () {
+    mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('active');
+});
+// Close mobile nav when a link is clicked
+mobileNav.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+        mobileNav.classList.remove('open');
+        hamburger.classList.remove('active');
+    });
+});
+
+// ---- Desktop dropdown ----
+document.querySelectorAll('.dropdown').forEach(function (item) {
+    item.addEventListener('mouseenter', function () {
+        this.querySelector('.dropdown-menu').style.display = 'block';
+    });
+    item.addEventListener('mouseleave', function () {
+        this.querySelector('.dropdown-menu').style.display = 'none';
+    });
+});
+
+// ---- Counter animation (triggers when in view) ----
+function animateCounter(el) {
+    const target = parseInt(el.getAttribute('data-target'));
+    const duration = 2000;
+    let startTime = null;
+    function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+        el.textContent = Math.floor(progress * target);
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = target;
+    }
+    requestAnimationFrame(step);
+}
+
+const counterObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.stat-number').forEach(function (el) {
+    counterObserver.observe(el);
+});
+
+// ---- Filter buttons (events & menu) ----
+document.querySelectorAll('.filter-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+        this.closest('.cs6, .cs7').querySelectorAll('.filter-btn').forEach(function (b) {
+            b.classList.remove('active');
+        });
+        this.classList.add('active');
+    });
+});
+
+// ---- Scroll to top button ----
+const scrollBtn = document.getElementById('scrollTopBtn');
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 300) {
+        scrollBtn.classList.add('show');
+    } else {
+        scrollBtn.classList.remove('show');
+    }
+});
+scrollBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ---- Booking form - Web3Forms ----
+const bookingForm = document.getElementById('booking-form');
+if (bookingForm) {
+    bookingForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Validate all required fields
+        const fields = bookingForm.querySelectorAll('[required]');
+        let valid = true;
+        fields.forEach(function (f) {
+            if (!f.value.trim()) {
+                valid = false;
+                f.style.borderColor = '#e03030';
+            } else {
+                f.style.borderColor = '';
+            }
+        });
+        if (!valid) {
+            showToast('Please fill in all required fields.', 'error');
+            return;
+        }
+
+        const submitBtn = bookingForm.querySelector('.booking-button');
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+
+        const formData = new FormData(bookingForm);
+
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+        })
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+            if (data.success) {
+                showToast('Booking submitted! We will contact you soon.', 'success');
+                bookingForm.reset();
+            } else {
+                showToast('Failed to send. Please try again.', 'error');
+            }
+            submitBtn.textContent = 'Submit Now';
+            submitBtn.disabled = false;
+        })
+        .catch(function() {
+            showToast('Network error. Please check your connection.', 'error');
+            submitBtn.textContent = 'Submit Now';
+            submitBtn.disabled = false;
+        });
+    });
+}
+
+function showToast(message, type) {
+    const existing = document.getElementById('toast-msg');
+    if (existing) existing.remove();
+    const toast = document.createElement('div');
+    toast.id = 'toast-msg';
+    toast.textContent = message;
+    toast.style.cssText =
+        'position:fixed;bottom:30px;left:50%;transform:translateX(-50%);' +
+        'padding:14px 28px;border-radius:50px;font-size:15px;font-weight:600;' +
+        'z-index:9999;box-shadow:0 6px 24px rgba(0,0,0,0.18);transition:opacity 0.4s;' +
+        (type === 'success' ? 'background:#C99A5B;color:#111;' : 'background:#e03030;color:#fff;');
+    document.body.appendChild(toast);
+    setTimeout(function() { toast.style.opacity = '0'; }, 3500);
+    setTimeout(function() { toast.remove(); }, 4000);
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
