@@ -729,3 +729,83 @@ html, body { overflow-x: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdan
     .cs6b { grid-template-columns: 1fr; }
     .section-title-lg { font-size: 26px; }
 }
+
+/* ===== DATE FIELD FIX ===== */
+.date-field {
+    position: relative;
+}
+
+.date-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 4px;
+    text-align: left;
+    padding-left: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.date-field input[type="date"] {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 15px;
+    color: #555;
+    background: var(--white);
+    border: 1.5px solid var(--gold);
+    border-radius: 6px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.date-field input[type="date"]:focus {
+    border-color: var(--gold-dark);
+    box-shadow: 0 0 0 3px rgba(201,168,76,0.18);
+}
+
+/* Fix date input on mobile - show calendar icon clearly */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    cursor: pointer;
+    filter: invert(0.5) sepia(1) saturate(3) hue-rotate(5deg);
+    width: 20px;
+    height: 20px;
+}
+
+/* Mobile booking form improvements */
+@media (max-width: 768px) {
+    .cs8 .booking-form {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .cs8 .booking-card {
+        padding: 28px 18px;
+    }
+
+    .cs8 .booking-title {
+        font-size: 28px;
+    }
+
+    .cs8 .booking-field select,
+    .cs8 .booking-field input,
+    .date-field input[type="date"] {
+        padding: 13px 14px;
+        font-size: 14px;
+    }
+
+    .cs8 .booking-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .date-label {
+        font-size: 12px;
+    }
+}
